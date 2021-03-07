@@ -1,5 +1,6 @@
-import { getBusiness } from "./BusinessData.js";
-import { publishBusinessList } from "./BusinessList.js";
+import { getBusiness, newyorkCompaniesfiltered, manufacturingFiltered } from "./BusinessData.js";
+import { publishBuisnessList } from "./BusinessList.js";
+
 
 getBusiness();
-publishBusinessList();
+publishBuisnessList();
