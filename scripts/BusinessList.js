@@ -1,10 +1,20 @@
 import { getBusiness, newyorkCompaniesfiltered, manufacturingFiltered, purchasingAgents } from "./BusinessData.js";
 import { nameBusiness, agentNames } from "./Business.js";
+import { findAgent } from "./findAgent.js"
 
 const contentTarget = document.querySelector("#businessList");
 const contentTarget1 = document.querySelector(".businessList--newYork");
 const contentTarget2 = document.querySelector(".businessList--manufacturing");
 const contentTarget3 = document.querySelector(".agents");
+const contentTarget4 = document.querySelector(".foundCompanies");
+
+const agentSearchInput = document.querySelector("#companySearch")
+agentSearchInput.addEventListener("keypress", keyPressEvent => {
+    if (keyPressEvent.charCode === 13) {
+        const agentResults = findAgent(keyPressEvent.target.value)
+        contentTarget4.innerHTML = nameBusiness(agentResults)
+    }
+})
 
 
 export const publishBuisnessList = () => {
