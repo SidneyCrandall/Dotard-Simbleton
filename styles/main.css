@@ -1,0 +1,29 @@
+body {
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: rgb(156, 134, 218);
+    background-color: rgb(23, 59, 59);
+}
+
+.businessSection {
+    display: block;
+}
+
+#businessList {
+    display: list;
+    text-decoration: none;
+}
+
+h1,
+h3,
+h4,
+h5 {
+    font-family: "Patua One", serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.section-main {
+    margin: 1em;
+}
